@@ -1,0 +1,5 @@
+description = "Non-blocking streaming Unicode codec for OCaml"
+version = "0.9.4"
+archive(byte) = "uutf.cma"
+archive(native) = "uutf.cmxa"
+requires = "cmdliner"
