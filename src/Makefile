@@ -3,12 +3,11 @@ VERSION:=0.9.4
 DESCRIPTION:=Non-blocking streaming Unicode codec for OCaml
 REQUIRES:=cmdliner
 OPT:=ocamlfind ocamlopt -g
-OPT:=ocamlfind ocamlopt -g
 OCAMLC:=ocamlfind ocamlc -g 
 LIBSRC:=\
 	uutf.mli uutf.ml
 
-all: uutf.cma uutf.cmxa
+all: META uutf.cma uutf.cmxa
 
 uutf.cma: uutf.mli uutf.ml
 	$(OCAMLC) -package $(REQUIRES) -o $@ -a $(LIBSRC)
